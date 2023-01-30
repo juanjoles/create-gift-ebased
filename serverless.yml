@@ -14,9 +14,9 @@ provider:
       Resource: arn:aws:dynamodb:us-east-1:450865910417:table/juanjoselescano-clients
 
 functions:
-  create-card:
+  create-gift:
     handler: create-gift.handler
     description: 'An API that create new gifts'
     events:
       - sqs:
-          arn: arn:aws:sqs:us-east-1:450865910417:juanjoselescano-createdCard
+          arn: arn:aws:sqs:us-east-1:450865910417:juanjoselescano-createGift
